@@ -1,0 +1,825 @@
+19:29:02.392 [main] INFO  i.g.c.config.GatlingConfiguration$ - Gatling will try to load 'gatling.conf' config file as ClassLoader resource.
+19:29:03.413 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+19:29:07.715 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:11.991 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:12.008 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/createToken.feature
+19:29:12.408 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 60
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.17)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"test1@karate.com","password":"Ankit@786"}}
+
+19:29:13.412 [main] DEBUG com.intuit.karate - response time in milliseconds: 997
+1 < 200
+1 < Date: Wed, 26 Apr 2023 13:59:14 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"155-BCYXX43oF5yWBIlSQEdCZo+sJEM"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=38euI378W0hSOgWsUcihL2aQOFe4kRfOOw9xPU0cbnYCgNuBeoqEW3iYrjQF8FVep9G948Sb8GQWx%2FI0V7llJJvJpRBHNEUXmyOAx5943ewI197AsOXkgzYELVjqvURAZME9"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7bdf5854e8bc2e46-BOM
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"user":{"email":"test1@karate.com","username":"testkarate1","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxQGthcmF0ZS5jb20iLCJ1c2VybmFtZSI6InRlc3RrYXJhdGUxIiwiaWF0IjoxNjgyNTE3NTU0LCJleHAiOjE2ODc3MDE1NTR9.8_jHIGkEhkGkT7aBPxI-RCgnOorDJf0lKQiHKKvoTgQ"}}
+
+19:29:13.434 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/createToken.feature
+19:29:13.484 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users/login
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxQGthcmF0ZS5jb20iLCJ1c2VybmFtZSI6InRlc3RrYXJhdGUxIiwiaWF0IjoxNjgyNTE3NTU0LCJleHAiOjE2ODc3MDE1NTR9.8_jHIGkEhkGkT7aBPxI-RCgnOorDJf0lKQiHKKvoTgQ
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 60
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.17)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"test1@karate.com","password":"Ankit@786"}}
+
+19:29:14.453 [main] DEBUG com.intuit.karate - response time in milliseconds: 965
+1 < 200
+1 < Date: Wed, 26 Apr 2023 13:59:15 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"155-FTTviAackqPqit4GrPFQQgZWcV0"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=LJL43VVuh21n6TjOJqE%2FV%2BTD7%2BlBx5QSCXEvnGxvb2Mgj0LHm6ygBvWPs6%2B3BwFPOHEz%2BSjhS6THOi6WLRFU2sJvYtMbjcbhtxMB1cKflgWxiyOOluwbMzSd0y3riw7PvVX7"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7bdf585b6d9b85eb-BOM
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"user":{"email":"test1@karate.com","username":"testkarate1","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxQGthcmF0ZS5jb20iLCJ1c2VybmFtZSI6InRlc3RrYXJhdGUxIiwiaWF0IjoxNjgyNTE3NTU1LCJleHAiOjE2ODc3MDE1NTV9.AOlDS3MtjsUylBhiGwvlGapXSe8KnOtf44iY3vkt2ys"}}
+
+19:29:14.498 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:14.519 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:14.535 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/createToken.feature
+19:29:14.547 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 60
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.17)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"test1@karate.com","password":"Ankit@786"}}
+
+19:29:15.416 [main] DEBUG com.intuit.karate - response time in milliseconds: 865
+1 < 200
+1 < Date: Wed, 26 Apr 2023 13:59:16 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"155-6DWLoguVfyAZD/V1I945Fzu8btQ"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=rkunq8EBc5nf7ozluvcTahI0iQUn7AsC2F0d5%2FYY7Vj7pW7EBHDNahc2w4vF67fQMOdyXYWFO7xHTQVLtrkqi2DA6Hz5a1ghPKl%2BVsuEKkdKtsHtsdtb07OP%2BoZX%2FhSq3%2F0L"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7bdf58616d88f480-BOM
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"user":{"email":"test1@karate.com","username":"testkarate1","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxQGthcmF0ZS5jb20iLCJ1c2VybmFtZSI6InRlc3RrYXJhdGUxIiwiaWF0IjoxNjgyNTE3NTU2LCJleHAiOjE2ODc3MDE1NTZ9.LPgR7d-WO0_kovHQdSo_lbzhgzROUCvU8drkqNBx4I0"}}
+
+19:29:15.437 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/createToken.feature
+19:29:15.446 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users/login
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxQGthcmF0ZS5jb20iLCJ1c2VybmFtZSI6InRlc3RrYXJhdGUxIiwiaWF0IjoxNjgyNTE3NTU2LCJleHAiOjE2ODc3MDE1NTZ9.LPgR7d-WO0_kovHQdSo_lbzhgzROUCvU8drkqNBx4I0
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 60
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.17)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"test1@karate.com","password":"Ankit@786"}}
+
+19:29:16.283 [main] DEBUG com.intuit.karate - response time in milliseconds: 830
+1 < 200
+1 < Date: Wed, 26 Apr 2023 13:59:17 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"155-6DWLoguVfyAZD/V1I945Fzu8btQ"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=HtnErCiAnhPM3jgeK5BKlwmM3EwBVedEDTXEJO5uzarvQHbvCJMmsLpeNJACX%2FHPA4mjOf6hE5UlK8Ekr1V4pW38rXISNiafaz38LwlgqPswE96qV8jwSE0KTofevCqBaUOm"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7bdf58671adf2961-BOM
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"user":{"email":"test1@karate.com","username":"testkarate1","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxQGthcmF0ZS5jb20iLCJ1c2VybmFtZSI6InRlc3RrYXJhdGUxIiwiaWF0IjoxNjgyNTE3NTU2LCJleHAiOjE2ODc3MDE1NTZ9.LPgR7d-WO0_kovHQdSo_lbzhgzROUCvU8drkqNBx4I0"}}
+
+19:29:16.318 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:16.331 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:16.334 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/createToken.feature
+19:29:16.351 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 60
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.17)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"test1@karate.com","password":"Ankit@786"}}
+
+19:29:17.189 [main] DEBUG com.intuit.karate - response time in milliseconds: 834
+1 < 200
+1 < Date: Wed, 26 Apr 2023 13:59:17 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"155-1DbEGtwDKEGcUZB6NyLN+Q9ljuk"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2FG%2FdGVoRI%2FqSOuxPDVkfZZVvmLyZft%2F%2Fe675Lcs4p3trODzcHRwtr0mYCjagGQDx2OM%2BFGxIDcx8EV02V0k86vWd%2FPixffo9XhXJQYIrOUM3Tdsn8cB5eD4SA0YaBcwGEvsb"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7bdf586cb9a984dd-BOM
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"user":{"email":"test1@karate.com","username":"testkarate1","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxQGthcmF0ZS5jb20iLCJ1c2VybmFtZSI6InRlc3RrYXJhdGUxIiwiaWF0IjoxNjgyNTE3NTU3LCJleHAiOjE2ODc3MDE1NTd9.8BatXV2wLDntJIbpqAxcfthzMefr3EqVS-bBR7Nw9Gw"}}
+
+19:29:17.207 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/createToken.feature
+19:29:17.233 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users/login
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxQGthcmF0ZS5jb20iLCJ1c2VybmFtZSI6InRlc3RrYXJhdGUxIiwiaWF0IjoxNjgyNTE3NTU3LCJleHAiOjE2ODc3MDE1NTd9.8BatXV2wLDntJIbpqAxcfthzMefr3EqVS-bBR7Nw9Gw
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 60
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.17)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"test1@karate.com","password":"Ankit@786"}}
+
+19:29:18.135 [main] DEBUG com.intuit.karate - response time in milliseconds: 897
+1 < 200
+1 < Date: Wed, 26 Apr 2023 13:59:18 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"155-wYB6rBoYleRAcUreo000rVnTE48"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Vro%2BT2orwPKHshLKmF0J4N3DUmXEEUsbezGYIxqoZzjOPmTO222aTDokMbpOBOImyERAReA1ooDFtW2%2Bh%2F4se3DwXCBcXzBG2uuculU8DqI5MYSUMcIu5ar6DSNFk1KRwMJv"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7bdf58725c493226-BOM
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"user":{"email":"test1@karate.com","username":"testkarate1","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxQGthcmF0ZS5jb20iLCJ1c2VybmFtZSI6InRlc3RrYXJhdGUxIiwiaWF0IjoxNjgyNTE3NTU4LCJleHAiOjE2ODc3MDE1NTh9.c2K9WhpK_BJWZgfv3dcsXZyXV6XJ75pPrXouDU7IiPs"}}
+
+19:29:18.244 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:18.259 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:18.261 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/createToken.feature
+19:29:18.281 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 60
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.17)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"test1@karate.com","password":"Ankit@786"}}
+
+19:29:19.106 [main] DEBUG com.intuit.karate - response time in milliseconds: 817
+1 < 200
+1 < Date: Wed, 26 Apr 2023 13:59:19 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"155-CQHiwVJBBT2tF7XBeEG424mjfsw"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=9Xf70K%2BBU8SNR%2B%2FakXVJS0dKETjp5KB%2BDdEqmOeNrP7GZagCkQdzbRAzYU14o936xk5G%2B0QKmGXtrIoizjnQ%2FaS8QrRcDII5Ii62uqInJvFtW48VWhT4nFpHgJgxNbXC%2BsW2"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7bdf5878bb16f307-BOM
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"user":{"email":"test1@karate.com","username":"testkarate1","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxQGthcmF0ZS5jb20iLCJ1c2VybmFtZSI6InRlc3RrYXJhdGUxIiwiaWF0IjoxNjgyNTE3NTU5LCJleHAiOjE2ODc3MDE1NTl9.hzonwYWOQuq0dmpOIt-2CnyYDsKBNJPnxoPn-TMEJIM"}}
+
+19:29:19.123 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/createToken.feature
+19:29:19.138 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users/login
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxQGthcmF0ZS5jb20iLCJ1c2VybmFtZSI6InRlc3RrYXJhdGUxIiwiaWF0IjoxNjgyNTE3NTU5LCJleHAiOjE2ODc3MDE1NTl9.hzonwYWOQuq0dmpOIt-2CnyYDsKBNJPnxoPn-TMEJIM
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 60
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.17)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"test1@karate.com","password":"Ankit@786"}}
+
+19:29:19.998 [main] DEBUG com.intuit.karate - response time in milliseconds: 852
+1 < 200
+1 < Date: Wed, 26 Apr 2023 13:59:20 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"155-A1bYy40r0VmR3BaRdErB3IjTapA"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=8VzpQUQP0J5P6WoW8sueNulfreESSDpNj5B5DiJanGqLmGyHehRTESXrlCD7n2VpDhxKAQK5E310draXVJK7Kx6JLANGYGe%2FpBLqtji%2BBa0CieQvaCUzq8KZBYLTYm2DdVns"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7bdf587e3b87f494-BOM
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"user":{"email":"test1@karate.com","username":"testkarate1","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxQGthcmF0ZS5jb20iLCJ1c2VybmFtZSI6InRlc3RrYXJhdGUxIiwiaWF0IjoxNjgyNTE3NTYwLCJleHAiOjE2ODc3MDE1NjB9.DugUURuNbLjJPpPK-bX2w2vB2hLw2f4vP3ZdOMImTvI"}}
+
+19:29:20.275 [GatlingSystem-akka.actor.default-dispatcher-16] INFO  i.g.c.stats.writer.LogFileDataWriter - Initializing
+19:29:20.275 [GatlingSystem-akka.actor.default-dispatcher-15] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initializing
+19:29:20.298 [GatlingSystem-akka.actor.default-dispatcher-16] INFO  i.g.c.stats.writer.LogFileDataWriter - Initialized
+19:29:20.308 [GatlingSystem-akka.actor.default-dispatcher-15] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initialized
+19:29:20.369 [gatling-1-1] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:20.416 [GatlingSystem-akka.actor.default-dispatcher-24] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:20.419 [GatlingSystem-akka.actor.default-dispatcher-24] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/createToken.feature
+19:29:20.439 [GatlingSystem-akka.actor.default-dispatcher-24] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 60
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.17)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"test1@karate.com","password":"Ankit@786"}}
+
+19:29:21.274 [GatlingSystem-akka.actor.default-dispatcher-24] DEBUG com.intuit.karate - response time in milliseconds: 833
+1 < 200
+1 < Date: Wed, 26 Apr 2023 13:59:22 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"155-+cHEt5bvMOPBlfFZRqPBEOCSaLE"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=M62NWFd7Oy%2BPTN5Ywlwn9fPPB0vkmmhnVwplX9jio2fycsClnCyqe4DcEI8%2FZFT3T%2B2JuuQplwB0wFl7x4Hz%2F5SooEUy2nh4Lqp4afe0txH%2F5cK7d3t9YZdF3zJaSp1NE429"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7bdf58864ed48507-BOM
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"user":{"email":"test1@karate.com","username":"testkarate1","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxQGthcmF0ZS5jb20iLCJ1c2VybmFtZSI6InRlc3RrYXJhdGUxIiwiaWF0IjoxNjgyNTE3NTYxLCJleHAiOjE2ODc3MDE1NjF9.8tUjq8JB7kVyfcibT_G-rx8xnBa6bm53MmrvK2Uc_pY"}}
+
+19:29:21.305 [GatlingSystem-akka.actor.default-dispatcher-24] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/createToken.feature
+19:29:21.739 [GatlingSystem-akka.actor.default-dispatcher-24] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:24.338 [gatling-1-2] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:24.396 [GatlingSystem-akka.actor.default-dispatcher-42] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:24.444 [GatlingSystem-akka.actor.default-dispatcher-42] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:25.338 [gatling-1-3] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:25.391 [GatlingSystem-akka.actor.default-dispatcher-54] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:25.427 [GatlingSystem-akka.actor.default-dispatcher-54] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:26.338 [gatling-1-4] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:26.391 [GatlingSystem-akka.actor.default-dispatcher-62] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:26.437 [GatlingSystem-akka.actor.default-dispatcher-62] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:27.330 [gatling-1-5] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:27.379 [GatlingSystem-akka.actor.default-dispatcher-74] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:27.411 [GatlingSystem-akka.actor.default-dispatcher-74] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:27.833 [gatling-1-6] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:27.868 [GatlingSystem-akka.actor.default-dispatcher-82] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:27.919 [GatlingSystem-akka.actor.default-dispatcher-82] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:28.335 [gatling-1-7] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:28.378 [GatlingSystem-akka.actor.default-dispatcher-92] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:28.408 [GatlingSystem-akka.actor.default-dispatcher-92] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:28.836 [gatling-1-8] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:28.865 [GatlingSystem-akka.actor.default-dispatcher-100] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:28.906 [GatlingSystem-akka.actor.default-dispatcher-100] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:29.333 [gatling-1-1] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:29.359 [GatlingSystem-akka.actor.default-dispatcher-10] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:29.408 [GatlingSystem-akka.actor.default-dispatcher-10] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:29.831 [gatling-1-2] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:29.868 [GatlingSystem-akka.actor.default-dispatcher-14] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:29.913 [GatlingSystem-akka.actor.default-dispatcher-14] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:30.331 [gatling-1-3] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:30.383 [GatlingSystem-akka.actor.default-dispatcher-30] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:30.419 [GatlingSystem-akka.actor.default-dispatcher-30] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:30.830 [gatling-1-4] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:30.861 [GatlingSystem-akka.actor.default-dispatcher-39] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:30.894 [GatlingSystem-akka.actor.default-dispatcher-39] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:31.337 [gatling-1-5] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:31.374 [GatlingSystem-akka.actor.default-dispatcher-48] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:31.410 [GatlingSystem-akka.actor.default-dispatcher-48] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:31.825 [gatling-1-6] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:31.952 [GatlingSystem-akka.actor.default-dispatcher-56] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:32.122 [GatlingSystem-akka.actor.default-dispatcher-56] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:32.325 [gatling-1-7] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:32.344 [GatlingSystem-akka.actor.default-dispatcher-62] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:32.387 [GatlingSystem-akka.actor.default-dispatcher-62] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:32.822 [gatling-1-8] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:32.832 [GatlingSystem-akka.actor.default-dispatcher-74] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:32.892 [GatlingSystem-akka.actor.default-dispatcher-74] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:33.338 [gatling-1-1] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:33.376 [GatlingSystem-akka.actor.default-dispatcher-84] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:33.413 [GatlingSystem-akka.actor.default-dispatcher-84] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:33.825 [gatling-1-2] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:33.850 [GatlingSystem-akka.actor.default-dispatcher-92] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:33.883 [GatlingSystem-akka.actor.default-dispatcher-92] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:34.324 [gatling-1-3] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:34.346 [GatlingSystem-akka.actor.default-dispatcher-100] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:34.391 [GatlingSystem-akka.actor.default-dispatcher-100] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:34.829 [gatling-1-4] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:34.851 [GatlingSystem-akka.actor.default-dispatcher-10] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:34.891 [GatlingSystem-akka.actor.default-dispatcher-10] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:35.327 [gatling-1-5] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:35.380 [GatlingSystem-akka.actor.default-dispatcher-22] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:35.406 [GatlingSystem-akka.actor.default-dispatcher-22] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:35.825 [gatling-1-6] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:35.849 [GatlingSystem-akka.actor.default-dispatcher-30] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:35.888 [GatlingSystem-akka.actor.default-dispatcher-30] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:36.338 [gatling-1-7] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:36.380 [GatlingSystem-akka.actor.default-dispatcher-41] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:36.417 [GatlingSystem-akka.actor.default-dispatcher-41] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:36.832 [gatling-1-8] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:36.851 [GatlingSystem-akka.actor.default-dispatcher-48] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:36.884 [GatlingSystem-akka.actor.default-dispatcher-48] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:37.333 [gatling-1-1] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:37.370 [GatlingSystem-akka.actor.default-dispatcher-57] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:37.406 [GatlingSystem-akka.actor.default-dispatcher-57] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:37.831 [gatling-1-2] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:37.851 [GatlingSystem-akka.actor.default-dispatcher-62] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:37.890 [GatlingSystem-akka.actor.default-dispatcher-62] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:38.333 [gatling-1-3] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:38.376 [GatlingSystem-akka.actor.default-dispatcher-76] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:38.416 [GatlingSystem-akka.actor.default-dispatcher-76] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:38.662 [gatling-1-4] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:38.678 [GatlingSystem-akka.actor.default-dispatcher-84] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:38.711 [GatlingSystem-akka.actor.default-dispatcher-84] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:38.987 [gatling-1-5] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:38.997 [GatlingSystem-akka.actor.default-dispatcher-92] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:39.026 [GatlingSystem-akka.actor.default-dispatcher-92] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:39.335 [gatling-1-6] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:39.366 [GatlingSystem-akka.actor.default-dispatcher-100] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:39.393 [GatlingSystem-akka.actor.default-dispatcher-100] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:39.581 [gatling-1-7] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:39.589 [GatlingSystem-akka.actor.default-dispatcher-10] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:39.611 [GatlingSystem-akka.actor.default-dispatcher-10] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:39.833 [gatling-1-8] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:39.882 [GatlingSystem-akka.actor.default-dispatcher-18] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:39.923 [GatlingSystem-akka.actor.default-dispatcher-18] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:40.080 [gatling-1-1] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:40.127 [GatlingSystem-akka.actor.default-dispatcher-29] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:40.151 [GatlingSystem-akka.actor.default-dispatcher-29] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:40.354 [gatling-1-2] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:40.369 [GatlingSystem-akka.actor.default-dispatcher-39] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:40.394 [GatlingSystem-akka.actor.default-dispatcher-39] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:40.531 [gatling-1-3] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:40.551 [GatlingSystem-akka.actor.default-dispatcher-47] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:40.574 [GatlingSystem-akka.actor.default-dispatcher-47] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:40.737 [gatling-1-4] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:40.783 [GatlingSystem-akka.actor.default-dispatcher-51] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:40.817 [GatlingSystem-akka.actor.default-dispatcher-51] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:40.925 [gatling-1-5] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:40.962 [GatlingSystem-akka.actor.default-dispatcher-66] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:40.995 [GatlingSystem-akka.actor.default-dispatcher-66] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:41.127 [gatling-1-6] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:41.171 [GatlingSystem-akka.actor.default-dispatcher-71] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:41.203 [GatlingSystem-akka.actor.default-dispatcher-71] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:41.332 [gatling-1-7] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:41.398 [GatlingSystem-akka.actor.default-dispatcher-78] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:41.423 [GatlingSystem-akka.actor.default-dispatcher-78] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:41.486 [gatling-1-8] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:41.508 [GatlingSystem-akka.actor.default-dispatcher-90] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:41.527 [GatlingSystem-akka.actor.default-dispatcher-90] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:41.675 [gatling-1-1] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:41.715 [GatlingSystem-akka.actor.default-dispatcher-97] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:41.739 [GatlingSystem-akka.actor.default-dispatcher-97] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:41.831 [gatling-1-2] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:41.862 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:41.908 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:42.002 [gatling-1-3] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:42.018 [GatlingSystem-akka.actor.default-dispatcher-11] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:42.045 [GatlingSystem-akka.actor.default-dispatcher-11] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:42.174 [gatling-1-4] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:42.191 [GatlingSystem-akka.actor.default-dispatcher-21] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:42.211 [GatlingSystem-akka.actor.default-dispatcher-21] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:42.336 [gatling-1-5] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:42.378 [GatlingSystem-akka.actor.default-dispatcher-32] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:42.417 [GatlingSystem-akka.actor.default-dispatcher-32] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:42.490 [gatling-1-6] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:42.506 [GatlingSystem-akka.actor.default-dispatcher-39] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:42.534 [GatlingSystem-akka.actor.default-dispatcher-39] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:42.665 [gatling-1-7] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:42.695 [GatlingSystem-akka.actor.default-dispatcher-47] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:42.726 [GatlingSystem-akka.actor.default-dispatcher-47] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:42.837 [gatling-1-8] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:42.857 [GatlingSystem-akka.actor.default-dispatcher-51] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:42.902 [GatlingSystem-akka.actor.default-dispatcher-51] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:42.988 [gatling-1-1] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:42.996 [GatlingSystem-akka.actor.default-dispatcher-66] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:43.015 [GatlingSystem-akka.actor.default-dispatcher-66] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:43.161 [gatling-1-2] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:43.169 [GatlingSystem-akka.actor.default-dispatcher-71] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:43.186 [GatlingSystem-akka.actor.default-dispatcher-71] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:43.338 [gatling-1-3] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:43.361 [GatlingSystem-akka.actor.default-dispatcher-78] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:43.387 [GatlingSystem-akka.actor.default-dispatcher-78] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:43.473 [gatling-1-4] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:43.500 [GatlingSystem-akka.actor.default-dispatcher-91] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:43.526 [GatlingSystem-akka.actor.default-dispatcher-91] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:43.615 [gatling-1-5] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:43.628 [GatlingSystem-akka.actor.default-dispatcher-97] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:43.659 [GatlingSystem-akka.actor.default-dispatcher-97] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:43.760 [gatling-1-6] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:43.779 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:43.807 [GatlingSystem-akka.actor.default-dispatcher-6] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:43.899 [gatling-1-7] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:43.941 [GatlingSystem-akka.actor.default-dispatcher-17] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:43.998 [GatlingSystem-akka.actor.default-dispatcher-17] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:44.036 [gatling-1-8] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:44.044 [GatlingSystem-akka.actor.default-dispatcher-21] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:44.058 [GatlingSystem-akka.actor.default-dispatcher-21] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:44.195 [gatling-1-1] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:44.238 [GatlingSystem-akka.actor.default-dispatcher-28] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:44.262 [GatlingSystem-akka.actor.default-dispatcher-28] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:44.334 [gatling-1-2] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:44.347 [GatlingSystem-akka.actor.default-dispatcher-36] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:44.369 [GatlingSystem-akka.actor.default-dispatcher-36] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:44.457 [gatling-1-3] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:44.466 [GatlingSystem-akka.actor.default-dispatcher-48] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:44.478 [GatlingSystem-akka.actor.default-dispatcher-48] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:44.582 [gatling-1-4] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:44.594 [GatlingSystem-akka.actor.default-dispatcher-51] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:44.624 [GatlingSystem-akka.actor.default-dispatcher-51] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:44.708 [gatling-1-5] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:44.719 [GatlingSystem-akka.actor.default-dispatcher-66] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:44.751 [GatlingSystem-akka.actor.default-dispatcher-66] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:44.835 [gatling-1-6] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:44.860 [GatlingSystem-akka.actor.default-dispatcher-71] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:44.887 [GatlingSystem-akka.actor.default-dispatcher-71] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:44.957 [gatling-1-7] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:44.976 [GatlingSystem-akka.actor.default-dispatcher-77] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:45.000 [GatlingSystem-akka.actor.default-dispatcher-77] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:45.085 [gatling-1-8] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:45.106 [GatlingSystem-akka.actor.default-dispatcher-84] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:45.141 [GatlingSystem-akka.actor.default-dispatcher-84] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:45.206 [gatling-1-1] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:45.220 [GatlingSystem-akka.actor.default-dispatcher-94] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:45.239 [GatlingSystem-akka.actor.default-dispatcher-94] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:45.331 [gatling-1-2] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:45.340 [GatlingSystem-akka.actor.default-dispatcher-100] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:45.354 [GatlingSystem-akka.actor.default-dispatcher-100] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:45.440 [gatling-1-3] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:45.448 [GatlingSystem-akka.actor.default-dispatcher-11] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:45.462 [GatlingSystem-akka.actor.default-dispatcher-11] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:45.567 [gatling-1-4] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:45.588 [GatlingSystem-akka.actor.default-dispatcher-26] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:45.606 [GatlingSystem-akka.actor.default-dispatcher-26] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:45.658 [gatling-1-5] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:45.667 [GatlingSystem-akka.actor.default-dispatcher-22] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:45.677 [GatlingSystem-akka.actor.default-dispatcher-22] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:45.769 [gatling-1-6] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:45.779 [GatlingSystem-akka.actor.default-dispatcher-36] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:45.794 [GatlingSystem-akka.actor.default-dispatcher-36] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:45.878 [gatling-1-7] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:45.891 [GatlingSystem-akka.actor.default-dispatcher-48] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:45.910 [GatlingSystem-akka.actor.default-dispatcher-48] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:46.001 [gatling-1-8] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:46.009 [GatlingSystem-akka.actor.default-dispatcher-51] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:46.022 [GatlingSystem-akka.actor.default-dispatcher-51] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:46.110 [gatling-1-1] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:46.116 [GatlingSystem-akka.actor.default-dispatcher-66] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:46.129 [GatlingSystem-akka.actor.default-dispatcher-66] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:46.219 [gatling-1-2] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:46.226 [GatlingSystem-akka.actor.default-dispatcher-71] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:46.238 [GatlingSystem-akka.actor.default-dispatcher-71] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:46.334 [gatling-1-3] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:46.357 [GatlingSystem-akka.actor.default-dispatcher-78] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:46.390 [GatlingSystem-akka.actor.default-dispatcher-78] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:46.423 [gatling-1-4] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:46.438 [GatlingSystem-akka.actor.default-dispatcher-85] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:46.455 [GatlingSystem-akka.actor.default-dispatcher-85] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:46.533 [gatling-1-5] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:46.539 [GatlingSystem-akka.actor.default-dispatcher-97] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:46.551 [GatlingSystem-akka.actor.default-dispatcher-97] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:46.630 [gatling-1-6] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:46.659 [GatlingSystem-akka.actor.default-dispatcher-99] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:46.676 [GatlingSystem-akka.actor.default-dispatcher-99] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:46.735 [gatling-1-7] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:46.750 [GatlingSystem-akka.actor.default-dispatcher-104] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:46.771 [GatlingSystem-akka.actor.default-dispatcher-104] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:46.831 [gatling-1-8] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:46.836 [GatlingSystem-akka.actor.default-dispatcher-21] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:46.844 [GatlingSystem-akka.actor.default-dispatcher-21] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:46.924 [gatling-1-1] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:46.951 [GatlingSystem-akka.actor.default-dispatcher-25] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:46.970 [GatlingSystem-akka.actor.default-dispatcher-25] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:47.035 [gatling-1-2] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:47.047 [GatlingSystem-akka.actor.default-dispatcher-40] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:47.070 [GatlingSystem-akka.actor.default-dispatcher-40] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:47.130 [gatling-1-3] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:47.135 [GatlingSystem-akka.actor.default-dispatcher-42] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:47.150 [GatlingSystem-akka.actor.default-dispatcher-42] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:47.239 [gatling-1-4] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:47.262 [GatlingSystem-akka.actor.default-dispatcher-52] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:47.289 [GatlingSystem-akka.actor.default-dispatcher-52] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:51.321 [gatling-1-5] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:51.345 [GatlingSystem-akka.actor.default-dispatcher-72] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:51.371 [GatlingSystem-akka.actor.default-dispatcher-72] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:52.332 [gatling-1-6] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:52.367 [GatlingSystem-akka.actor.default-dispatcher-80] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:52.408 [GatlingSystem-akka.actor.default-dispatcher-80] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:53.340 [gatling-1-7] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:53.376 [GatlingSystem-akka.actor.default-dispatcher-95] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:53.406 [GatlingSystem-akka.actor.default-dispatcher-95] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:54.328 [gatling-1-8] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:54.369 [GatlingSystem-akka.actor.default-dispatcher-98] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:54.394 [GatlingSystem-akka.actor.default-dispatcher-98] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:55.330 [GatlingSystem-akka.actor.default-dispatcher-13] INFO  i.g.core.controller.inject.Injector - Scenario Create and Delete Article has finished injecting
+19:29:55.333 [GatlingSystem-akka.actor.default-dispatcher-13] INFO  i.g.core.controller.inject.Injector - Injecting is done
+19:29:55.334 [gatling-1-1] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:55.351 [GatlingSystem-akka.actor.default-dispatcher-11] INFO  com.intuit.karate - karate.env system property was: null 
+19:29:55.371 [GatlingSystem-akka.actor.default-dispatcher-11] ERROR com.intuit.karate - classpath:conduitApp/performance/CreateArticle.feature:14
+* configure hwaders = {"Authorization": #('Token '+ __gatling.token)}
+unexpected 'configure' key: 'hwaders'
+classpath:conduitApp/performance/CreateArticle.feature:14
+19:29:55.373 [GatlingSystem-akka.actor.default-dispatcher-12] INFO  i.g.core.controller.inject.Injector - All users of scenario Create and Delete Article are stopped
+19:29:55.377 [GatlingSystem-akka.actor.default-dispatcher-12] INFO  i.g.core.controller.inject.Injector - Stopping
+19:29:55.382 [GatlingSystem-akka.actor.default-dispatcher-20] INFO  i.gatling.core.controller.Controller - Injector has stopped, initiating graceful stop
+19:29:55.470 [GatlingSystem-akka.actor.default-dispatcher-24] INFO  akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+19:29:55.570 [main] INFO  i.gatling.charts.stats.LogFileReader - Collected List(C:\Users\hp\Desktop\UdemyKarateTestApplication\DemoUdemy\target\gatling\perftest-20230426135920121\simulation.log) from perftest-20230426135920121
+19:29:55.603 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass
+19:29:55.620 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass done: read 180 lines
+19:29:55.641 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass
+19:29:55.693 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass: read 180 lines
